@@ -84,10 +84,6 @@ namespace UnityStandardAssets.Cameras
                 m_LastFlatAngle = currentFlatAngle;
             }
 
-            // camera position moves towards target position:
-           // float 
-            //Vector3 hack = new Vector3(m_Target.position.x - dist, m_Target.position.y, m_Target.position.z) ;
-
             transform.position = Vector3.Lerp(transform.position, m_Target.position, deltaTime*m_MoveSpeed);
 
             // camera's rotation is split into two parts, which can have independend speed settings:

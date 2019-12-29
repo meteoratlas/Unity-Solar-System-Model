@@ -14,8 +14,6 @@ public class DrawOrbitLine : MonoBehaviour {
     public float rotateSpeed = 0.4f;
 
     void Awake () {
-        Debug.Log("make orbit");
-
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = Resolution;
 
